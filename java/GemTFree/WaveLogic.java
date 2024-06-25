@@ -18,6 +18,7 @@ public class WaveLogic {
         round += 1;
         for(Enemy e : Enemy.createWaves(round)){
             m.spawnEnemy(e);
+            // for when I create the class EnemySpawner.spawnEnemy();
         }
     }
 }
