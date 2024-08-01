@@ -1,9 +1,12 @@
 package GemTFree;
 
 public class Enemy extends Entity{
+
+    private double speed;
     
-    public Enemy(int h, int s, int l){
-        super(h, s, l);
+    public Enemy(int h, int l, int s){
+        super(h, l);
+        this.speed = s;
     }
     
     public static Enemy[] createWaves(int wave){

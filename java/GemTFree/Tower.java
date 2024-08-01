@@ -1,5 +1,7 @@
 package GemTFree;
 
+import GemTFree.Enemy;
+
 public class Tower {
     
     //we'll use this as a generic template and have the big combos in here
@@ -16,7 +18,7 @@ public class Tower {
         this.attackSpeed = as;
     }
     
-    public void shoot(){
+    public void shoot(Enemy e){
         
     }
     
