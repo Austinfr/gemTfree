@@ -87,5 +87,9 @@ public class Enemy extends Entity{
         HIGH_ARMOUR,
         UNTOUCHABLE;
     }
+
+    public double getSpeed(){
+        return speed;
+    }
     
 }

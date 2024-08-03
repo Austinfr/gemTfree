@@ -1,4 +1,4 @@
-package GemTFree;
+package main.java.GemTFree.Mechanics;
 
 public class GameMath {
     

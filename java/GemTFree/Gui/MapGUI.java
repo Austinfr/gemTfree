@@ -1,16 +1,14 @@
-package GemTFree;
+package main.java.GemTFree.Gui;
 
 import java.awt.Button;
 import java.awt.GridLayout;
-import javax.swing.*;
+import javax.swing.JPanel;
 
-public class MapGUI extends JFrame {
+public class MapGUI extends JPanel {
     
     public MapGUI(){
         setSize(800, 800);
         drawMap();
-        setVisible(true);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
     
     public void drawMap(){
