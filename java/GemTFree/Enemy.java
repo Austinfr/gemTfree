@@ -6,7 +6,7 @@ public class Enemy extends Entity{
     
     public Enemy(int h, int l, int s){
         super(h, l);
-        this.speed = s;
+        speed = s;
     }
     
     public static Enemy[] createWaves(int wave){

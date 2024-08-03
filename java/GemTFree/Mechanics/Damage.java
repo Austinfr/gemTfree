@@ -9,12 +9,22 @@ public class Damage{
     };
 
     private TYPE damageType;
+    private int damageValue;
 
-    public Damage(TYPE t){
+    public Damage(TYPE t, int i){
         this.damageType = t;
+        this.damageValue = i;
+    }
+
+    public void setDamageValue(int ndv){
+        damageValue = ndv;
     }
     
     public TYPE getDamageType(){
         return this.damageType;
+    }
+
+    public int getDamageValue(){
+        return this.damageValue;
     }
 };
