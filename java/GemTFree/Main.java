@@ -2,13 +2,15 @@ package GemTFree;
 
 import java.util.Random;
 
+import main.java.GemTFree.Gui.GameWindow;
+
 
 public class Main {
     
     public static void main(String[] args) {
         //for later
         //startGame();
-        new MapGUI();
+        new GameWindow();
         
     }
     
