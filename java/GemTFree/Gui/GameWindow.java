@@ -3,12 +3,15 @@ package main.java.GemTFree.Gui;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
+import java.awt.event.*;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class GameWindow extends JFrame {
+
+    private JPanel startGamePanel;
     
     public GameWindow(){
         testSetup();
@@ -19,7 +22,7 @@ public class GameWindow extends JFrame {
     }
 
     private void testSetup(){
-        JPanel startGamePanel = new JPanel();
+        startGamePanel = new JPanel();
         startGamePanel.setSize(new Dimension(200,200));
         JButton startGameButton = new JButton();
         startGamePanel.add(startGameButton);
@@ -35,12 +38,12 @@ public class GameWindow extends JFrame {
     }
 
     private void changeWindow(){
-        remove(getGlassPane());
-        setGlassPane(new JPanel(200,200){
+        remove(startGamePanel);
+        add(new JPanel(){
             @Override
             public void paint(Graphics g) {
                 g.setColor(Color.RED);
-                g.drawRect(0, 0, 200, 200);
+                g.fillRect(0, 0, 200, 200);
             }
         });
     }
