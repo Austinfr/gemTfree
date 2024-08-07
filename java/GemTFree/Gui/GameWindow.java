@@ -33,7 +33,7 @@ public class GameWindow extends JFrame {
             }
         });
 
-        add(startGamePanel);
+        getConentPane().add(startGamePanel);
 
     }
 
